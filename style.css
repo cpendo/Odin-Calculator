@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@500&display=swap');
+*{
+    margin: 0;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    text-transform: uppercase;
+    color: #3B5249;
+    box-sizing: border-box
+}
+:root{
+    --border: 2px solid #3B5249;
+    --radius: 5px;
+}
+body{
+    background-color: #e4ebd3;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    min-height: 550px;
+    width: 25%;
+    min-width: 350px;
+    margin: auto;
+    padding: 10px;
+    margin-top: 50px;
+    border: var(--border);
+    border-radius: var(--radius);
+    background-color: #519872;
+}
+.screen {
+    padding: 10px 20px;
+    border: var(--border);
+    border-radius: var(--radius);
+    margin-bottom: 20px;
+    background-color: #e4ebd3;
+    text-align: right;
+    width: 90%;
+    word-wrap: break-word;
+}
+.previousNumber {
+    min-height: 32px;
+    font-size: 20px;
+} 
+.currentNumber {
+    min-height: 64px;
+    font-size: 40px;
+}
+.shortcuts{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 25px;
+}
+.shortcuts button{
+    border: var(--border);
+    padding: 15px 35px;
+    border-radius: var(--radius);
+    font-size: 18px;
+}
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 20px;
+    gap: 10px;
+}
+.btn, .operator, .equals, .decimal{
+    text-align: center;
+    font-size: 25px;
+    border: var(--border);
+    border-radius: var(--radius);
+    padding: 15px 25px; 
+}
+button:hover{
+    background-color: #839851b2;
+    color: #e4ebd3;
+}
